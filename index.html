@@ -9,6 +9,23 @@
 <meta property="og:image:width" content="512">
 <meta property="og:image:height" content="512">
 <meta property="og:url" content="https://nombon-app.github.io/">
+<link rel="alternate" hreflang="de" href="https://nombon-app.github.io/">
+<link rel="alternate" hreflang="en" href="https://nombon-app.github.io/en/">
+<link rel="alternate" hreflang="es" href="https://nombon-app.github.io/es/">
+<link rel="alternate" hreflang="it" href="https://nombon-app.github.io/it/">
+<link rel="alternate" hreflang="fr" href="https://nombon-app.github.io/fr/">
+<link rel="alternate" hreflang="nl" href="https://nombon-app.github.io/nl/">
+<link rel="alternate" hreflang="pt" href="https://nombon-app.github.io/pt/">
+<link rel="alternate" hreflang="pl" href="https://nombon-app.github.io/pl/">
+<link rel="alternate" hreflang="x-default" href="https://nombon-app.github.io/">
+<script>(function(){try{
+if(/[?&]lang=de(&|$)/.test(location.search)){try{localStorage.setItem('nb_lang','de')}catch(e){}return}
+var s=null;try{s=localStorage.getItem('nb_lang')}catch(e){}
+if(s)return;
+var l=((navigator.languages&&navigator.languages[0])||navigator.language||'de').toLowerCase().slice(0,2);
+var ok={en:1,es:1,it:1,fr:1,nl:1,pt:1,pl:1};
+if(l!=='de'&&ok[l]){try{localStorage.setItem('nb_lang','1')}catch(e){}location.replace(l+'/index.html')}
+}catch(e){}})();</script>
 <link rel="icon" href="icon.png">
 <style>
 :root{--text:#1C1D21;--muted:#55575E;--line:#E4E3DE;--accent:#F26B3A;--accentText:#A8421A;--soft:#FBEFE8;--bg:#F0F0ED}
@@ -32,9 +49,10 @@ h2{font-size:20px;margin:0 0 12px}
 ul{padding-left:20px;margin:8px 0}li{margin:6px 0}
 .small{font-size:13.5px;color:var(--muted)}
 a{color:var(--accentText)}
+.lang{display:flex;flex-wrap:wrap;gap:4px 10px;margin-left:auto;font-size:13px}.lang a{font-weight:600}.lang .cur{font-weight:800;color:#1C1D21}
 </style></head><body>
 
-<nav><strong>NomBon</strong><a href="datenschutz.html">Datenschutz</a><a href="impressum.html">Impressum</a></nav>
+<nav><strong>NomBon</strong><a href="datenschutz.html">Datenschutz</a><a href="impressum.html">Impressum</a><span class="lang"><span class="cur" aria-current="true">DE</span><a href="en/index.html" hreflang="en" lang="en">EN</a><a href="es/index.html" hreflang="es" lang="es">ES</a><a href="it/index.html" hreflang="it" lang="it">IT</a><a href="fr/index.html" hreflang="fr" lang="fr">FR</a><a href="nl/index.html" hreflang="nl" lang="nl">NL</a><a href="pt/index.html" hreflang="pt" lang="pt">PT</a><a href="pl/index.html" hreflang="pl" lang="pl">PL</a></span></nav>
 
 <div class="card">
   <div class="hero"><img src="icon.png" alt=""><h1>NomBon</h1></div>
